@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+
+    background: linear-gradient(120deg, #ef32d9, #89fffd);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    height: 50px;
+    width: 315px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(5, 5, 5, .9);
+    border-radius: 7px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .7);
+
+    color: white;
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.relogio {
+    height: 200px;
+    width: 550px;
+
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.relogio div {
+    height: 150px;
+    width: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(5, 5, 5, .9);
+    border-radius: 7px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+
+    color: white;
+    letter-spacing: 3px;
+}
+
+.relogio span {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.relogio span.tempo {
+    font-size: 10px;
+}
+
+.container {
+    height: 125px;
+    width: 550px;
+
+    background: rgba(5, 5, 5, .9);
+    border-radius: 7px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .relogio {
+        height: 425px;
+        width: 200px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .relogio div {
+        height: 120px;
+        width: 120px;
+    }
+
+    .relogio span {
+        font-size: 40px;
+    }
+
+    .container{
+        height: 100px;
+        width: 315px;
+
+        text-align: center;
+
+        font-size: 15px;
+    }
+}
+
+/* referência do canal Larissa Kich */
