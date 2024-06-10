@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: radial-gradient(circle, rgba(72,85,99,1) 0%, rgba(41,50,60,1) 30%, rgba(44,62,80,1) 80%);
+    background-repeat: no-repeat;
+}
+
+.clock{
+    width: 500px;
+    height: 500px;
+
+    background: #283F39;
+    border: 10px solid #263530;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.2);
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock span{
+    transform: rotate(calc(30deg * var(--n)));
+    position: absolute;
+
+    text-align: center;
+    inset: 20px;
+    font-size: 40px;
+
+    /* inset -> abreviação para o top, right, left, bottom */
+    /* top: 20px;
+    right: 20px;
+    left: 20px;
+    bottom: 20px; */
+}
+
+.number b{
+    transform: translate(-50%) rotate(calc(-30deg * var(--n)));
+    display: inline-block;
+
+    background-image: radial-gradient(circle at 12.5% 12.5%, #ede231 0, #d1bc21 25%, #b19511 50%, #8f7003 75%, #705100 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pointerCenter{
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+
+    position: absolute;
+
+    border-radius: 50%;
+    background-image: radial-gradient(circle at 12.5% 12.5%, #ede231 0, #d1bc21 25%, #b19511 50%, #8f7003 75%, #705100 100%);
+}
+
+.hour, .min, .sec{
+    --rotate: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+
+    border-radius: 30px 30px 0 0;
+    transform-origin: bottom;
+
+    background-image: radial-gradient(circle at 12.5% 12.5%, #ede231 0, #d1bc21 25%, #b19511 50%, #8f7003 75%, #705100 100%);
+}
+
+.hour{
+    width: 12px;
+    height: 26%;
+}
+
+.min{
+    width: 12px;
+    height: 38%;
+}
+
+.sec{
+    width: 6px;
+    height: 42%;
+}
+
+/* responsividade - responsividade - responsividade - responsividade */
+
+@media screen and (max-width: 600px) {
+    .clock{
+        width: 400px;
+        height: 400px;
+}
+
+    .clock span{
+        font-size: 36px;
+    }
+
+    .hour{
+        width: 10px;
+    }
+    
+    .min{
+        width: 10px;
+    }
+    
+    .sec{
+        width: 4px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .clock{
+        width: 280px;
+        height: 280px;
+}
+
+    .clock span{
+        font-size: 30px;
+    }
+
+    .hour{
+        width: 8px;
+    }
+    
+    .min{
+        width: 8px;
+    }
+}
+
+/* referência do Canal Will Dev e do Canal Code Braces */

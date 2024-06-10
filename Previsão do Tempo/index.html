@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <title>Previsão do Tempo</title>
+</head>
+
+<body>
+    <div class="box-container">
+        <input class="input-cidade" placeholder="Digite o nome da cidade">
+        <button onclick="clique()">
+            <img src="https://www.svgrepo.com/show/488200/find.svg" alt="icone-buscar">
+        </button>
+
+        <div id="box-info" class="view">
+            <h2 class="cidade"></h2>
+
+            <div class="temperaturas">
+                <div class="column">
+                    <p class="text">Atual</p>
+                    <p class="temperatura"></p>
+                </div>
+
+                <div class="column">
+                    <p class="text">Máxima</p>
+                    <p class="temp-max"></p>
+                </div>
+
+                <div class="column">
+                    <p class="text">Mínima</p>
+                    <p class="temp-min"></p>
+                </div>
+            </div>
+
+            <div class="box-clima">
+                <img class="img-previsao" src="">
+                <p class="text-previsao"></p>
+            </div>
+
+            <p class="umidade"></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- referência do Canal DevClub Programação -->

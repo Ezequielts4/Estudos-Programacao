@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+}
+
+.box-container{
+    background: rgba(0, 0, 0, .9);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    padding: 25px;
+    
+    color: white;
+
+    width: 95%;
+    max-width: 450px;
+}
+
+.input-cidade{
+    width: calc(100% - 70px);
+
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 15px;
+    
+    background-color: #7c7c7c2b;
+    
+    font-size: 18px;
+    color: white;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #7c7c7c2b;
+
+    float: right;
+    cursor: pointer;
+}
+
+button img{
+    width: 20px;
+}
+
+#box-info{
+    margin-top: 30px;
+}
+
+.temperaturas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.view{
+    display: none;
+}
+
+.cidade{
+    color: white;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.temperatura, .temp-max, .temp-min{
+    font-size: 20px;
+    color: white;
+
+    margin-top: 5px;
+}
+
+.text{
+    font-size: 13px;
+    color: #7c7c7c;
+    letter-spacing: 3px;
+}
+
+.box-clima{
+    display: flex;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.text-previsao{
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.img-previsao{
+    display: inline;
+}
+
+.umidade{
+    margin-top: 20px;
+}
+
+/* referência do Canal DevClub Programação */
